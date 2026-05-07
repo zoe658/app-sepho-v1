@@ -13,7 +13,7 @@ function generer() {
   loading.style.display = "block";
   resultat.innerHTML = "";
 
-  fetch("http://localhost:3000/generate", {
+  fetch("/generate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
